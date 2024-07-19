@@ -191,6 +191,7 @@ def test_update_project():
     assert updated_project["content"] == update_data["content"]
     assert updated_project["demo"] == update_data["demo"]
 
+
     # Verify the update by fetching the project again
     get_response = requests.get(f"{API_URL}/project/{project_id}")
     assert get_response.status_code == 200
