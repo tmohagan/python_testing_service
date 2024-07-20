@@ -1,6 +1,5 @@
 import pytest
 import requests
-from config import API_URL
 from config import API_URL, TEST_CREDENTIALS
 
 def login():
